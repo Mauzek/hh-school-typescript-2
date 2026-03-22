@@ -33,13 +33,13 @@ export async function main() {
 
   // ── Ошибки компиляции ──────
 
-  // ❌ scale должен быть number
+  // Ошибка: scale должен быть number
   // await DomShot.capture(el, { scale: "two" });
 
-  // ❌ "bmp" не входит в ImageFormat
+  // Ошибка: "bmp" не входит в ImageFormat
   // await DomShot.capture(el, { format: "bmp" });
 
-  // ❌ первый аргумент — HTMLElement, не string
+  // Ошибка: первый аргумент HTMLElement, не string
   // await DomShot.capture("not element");
 
 

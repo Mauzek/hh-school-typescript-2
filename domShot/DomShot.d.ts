@@ -33,17 +33,17 @@ export interface DomShotOptions {
 export interface DomShotInstance {
   /**
    * Делает скриншот DOM-элемента и возвращает data URL картинки.
-   * @param element — DOM-элемент для скриншота
-   * @param options — настройки (опционально)
+   * @param element - DOM-элемент для скриншота
+   * @param options - настройки (опционально)
    * @returns Promise с data URL изображения
    */
   capture(element: HTMLElement, options?: DomShotOptions): Promise<string>;
 
   /**
    * Делает скриншот и сразу скачивает файл.
-   * @param element — DOM-элемент
-   * @param filename — имя файла (без расширения)
-   * @param options — настройки (опционально)
+   * @param element - DOM-элемент
+   * @param filename - имя файла (без расширения)
+   * @param options - настройки (опционально)
    */
   download(
     element: HTMLElement,
