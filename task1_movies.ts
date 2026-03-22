@@ -9,7 +9,7 @@ export interface Movie {
   director?: string;
 }
 
-// ─── Жанры (as const + вывод типа) ─────────────────────────────
+// ─── Жанры ─────────────────────────────
 export const GENRES = ["comedy", "drama", "action", "horror", "sci-fi"] as const;
 type Genre = (typeof GENRES)[number];
 
