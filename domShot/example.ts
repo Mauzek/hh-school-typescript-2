@@ -28,8 +28,8 @@ export async function main() {
   await DomShot.capture(el, { backgroundColor: null });
 
   // ── capture: пустые опции / без опций ───────────────────────
-  await DomShot.capture(el, {}); // ✅
-  await DomShot.capture(el); // ✅
+  await DomShot.capture(el, {});
+  await DomShot.capture(el); 
 
   // ── Ошибки компиляции ──────
 
@@ -42,7 +42,7 @@ export async function main() {
   // ❌ первый аргумент — HTMLElement, не string
   // await DomShot.capture("not element");
 
-  
+
   await DomShot.download(el, "screenshot");
   await DomShot.download(el, "photo", { format: "webp", quality: 0.8 });
 
